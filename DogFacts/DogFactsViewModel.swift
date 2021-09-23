@@ -27,6 +27,7 @@ class DogFactsViewModel: ObservableObject {
                         if let fact = jsonData[0]["fact"] {
                             self.dogFacts = DogFacts(fact: fact)
                             self.apiState = .success
+                            UserDefaults.standard.set(fact, forKey: "DogFact \(UUID())")
                         } else {
                             self.apiState = .failed
                         }
