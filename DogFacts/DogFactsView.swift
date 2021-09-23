@@ -30,7 +30,6 @@ struct DogFactsView: View {
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)
                         .shadow(color: Color.black.opacity(0.25), radius: 0.1, x: -1 , y: 1)
-                        .transition(.slide)
                         .padding(15)
                         .multilineTextAlignment(.center)
                 case .failed:
@@ -38,9 +37,7 @@ struct DogFactsView: View {
                 }
                 Spacer()
                 Button(action: {
-                    withAnimation {
                         viewModel.fetchDogFact()
-                    }
                 }) {
                     Text("Another one!")
                         .fontWeight(.bold)
@@ -50,7 +47,6 @@ struct DogFactsView: View {
                 }
                 Spacer()
             }
-            
         }
     }
 }
