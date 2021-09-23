@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		E452237B26FC650A004DE631 /* DogFactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E452237A26FC650A004DE631 /* DogFactsApp.swift */; };
-		E452237D26FC650A004DE631 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E452237C26FC650A004DE631 /* ContentView.swift */; };
+		E452237D26FC650A004DE631 /* DogFactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E452237C26FC650A004DE631 /* DogFactsView.swift */; };
 		E452237F26FC650D004DE631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E452237E26FC650D004DE631 /* Assets.xcassets */; };
 		E452238226FC650D004DE631 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E452238126FC650D004DE631 /* Preview Assets.xcassets */; };
+		E452238A26FC6659004DE631 /* DogFactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E452238926FC6659004DE631 /* DogFactsViewModel.swift */; };
+		E452238C26FC6788004DE631 /* DogFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E452238B26FC6788004DE631 /* DogFacts.swift */; };
+		E452238E26FC6B18004DE631 /* ApiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E452238D26FC6B18004DE631 /* ApiState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E452237726FC650A004DE631 /* DogFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E452237A26FC650A004DE631 /* DogFactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFactsApp.swift; sourceTree = "<group>"; };
-		E452237C26FC650A004DE631 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E452237C26FC650A004DE631 /* DogFactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFactsView.swift; sourceTree = "<group>"; };
 		E452237E26FC650D004DE631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E452238126FC650D004DE631 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E452238326FC650D004DE631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E452238926FC6659004DE631 /* DogFactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFactsViewModel.swift; sourceTree = "<group>"; };
+		E452238B26FC6788004DE631 /* DogFacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFacts.swift; sourceTree = "<group>"; };
+		E452238D26FC6B18004DE631 /* ApiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				E452237A26FC650A004DE631 /* DogFactsApp.swift */,
-				E452237C26FC650A004DE631 /* ContentView.swift */,
+				E452238B26FC6788004DE631 /* DogFacts.swift */,
+				E452238926FC6659004DE631 /* DogFactsViewModel.swift */,
+				E452237C26FC650A004DE631 /* DogFactsView.swift */,
 				E452237E26FC650D004DE631 /* Assets.xcassets */,
 				E452238326FC650D004DE631 /* Info.plist */,
 				E452238026FC650D004DE631 /* Preview Content */,
+				E452238D26FC6B18004DE631 /* ApiState.swift */,
 			);
 			path = DogFacts;
 			sourceTree = "<group>";
@@ -138,7 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E452237D26FC650A004DE631 /* ContentView.swift in Sources */,
+				E452238A26FC6659004DE631 /* DogFactsViewModel.swift in Sources */,
+				E452238E26FC6B18004DE631 /* ApiState.swift in Sources */,
+				E452237D26FC650A004DE631 /* DogFactsView.swift in Sources */,
+				E452238C26FC6788004DE631 /* DogFacts.swift in Sources */,
 				E452237B26FC650A004DE631 /* DogFactsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
