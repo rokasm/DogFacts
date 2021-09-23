@@ -12,11 +12,13 @@ class DogFactsViewModel: ObservableObject {
     @Published private(set) var dogFacts: DogFacts?
     private let apiString: String = "https://dog-facts-api.herokuapp.com/api/v1/resources/dogs?number=1"
     private let apiURL: URL
-    
+    var dogFactsStorage: [String] = []
+
     init() {
         apiURL = URL(string: apiString)!
         apiState = .loading
         fetchDogFact()
+        dogFactsStorage = UserDefaults.standard.stringArray(forKey: "dogfacts") ?? []
     }
     
     func fetchDogFact() {
@@ -27,7 +29,8 @@ class DogFactsViewModel: ObservableObject {
                         if let fact = jsonData[0]["fact"] {
                             self.dogFacts = DogFacts(fact: fact)
                             self.apiState = .success
-                            UserDefaults.standard.set(fact, forKey: "DogFact \(UUID())")
+                            self.dogFactsStorage.append(fact)
+                            UserDefaults.standard.set(self.dogFactsStorage, forKey: "dogfacts")
                         } else {
                             self.apiState = .failed
                         }
