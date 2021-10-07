@@ -3,17 +3,17 @@
   "iOS" : [
     {
       "swiftToolchainVersion" : "5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)",
-      "hash" : "74672824a277810ddf8ece0021ea6c1c433e1ac71594ce74d2a2274dda14492d",
-      "name" : "Swinject",
-      "container" : "Swinject.xcframework",
-      "identifier" : "ios-arm64_armv7"
-    },
-    {
-      "swiftToolchainVersion" : "5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)",
       "hash" : "66d9ba402b7ff3cb8e45cf55102225d48700c342dc1b0426837c42821598e8f2",
       "name" : "Swinject",
       "container" : "Swinject.xcframework",
       "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)",
+      "hash" : "fb1f06e6f29ebf31853fcbf88daca254b87ac75978c50abd2d2366f9bb3f9405",
+      "name" : "Swinject",
+      "container" : "Swinject.xcframework",
+      "identifier" : "ios-arm64_armv7"
     }
   ]
 }
