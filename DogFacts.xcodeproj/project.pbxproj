@@ -23,7 +23,6 @@
 		E4D4E69A270F1E2300710EBC /* DogFactsStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D4E699270F1E2300710EBC /* DogFactsStorageManager.swift */; };
 		E4D4E6A6270F86FA00710EBC /* SwinjectAutoregistration.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D4E6A5270F86FA00710EBC /* SwinjectAutoregistration.xcframework */; };
 		E4D4E6A7270F86FA00710EBC /* SwinjectAutoregistration.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4D4E6A5270F86FA00710EBC /* SwinjectAutoregistration.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E4D4E6A9270F899500710EBC /* HTTPNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D4E6A8270F899500710EBC /* HTTPNetworking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,7 +57,6 @@
 		E4D4E697270F0C3B00710EBC /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		E4D4E699270F1E2300710EBC /* DogFactsStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFactsStorageManager.swift; sourceTree = "<group>"; };
 		E4D4E6A5270F86FA00710EBC /* SwinjectAutoregistration.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwinjectAutoregistration.xcframework; path = Carthage/Build/SwinjectAutoregistration.xcframework; sourceTree = "<group>"; };
-		E4D4E6A8270F899500710EBC /* HTTPNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPNetworking.swift; path = "../../../../Downloads/BitcoinAdventurer/BitcoinAdventurer-Starter/Bitcoin Adventurer/Dependencies/HTTPNetworking.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +124,6 @@
 		E4D4E68F270F052A00710EBC /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				E4D4E6A8270F899500710EBC /* HTTPNetworking.swift */,
 				E4D4E690270F054D00710EBC /* Network.swift */,
 				E4D4E692270F058A00710EBC /* DogFactFetcher.swift */,
 				E4D4E699270F1E2300710EBC /* DogFactsStorageManager.swift */,
@@ -237,7 +234,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4D4E6A9270F899500710EBC /* HTTPNetworking.swift in Sources */,
 				E452238A26FC6659004DE631 /* DogFactsViewModel.swift in Sources */,
 				E452238E26FC6B18004DE631 /* ApiState.swift in Sources */,
 				E4D4E695270F065B00710EBC /* Endpoint.swift in Sources */,
