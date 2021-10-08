@@ -22,7 +22,7 @@ struct DogFactFetcher: Fetcher {
     func fetch(response: @escaping (DogFact?) -> Void) {
         DispatchQueue.global(qos: .default).async {
             network.request(from: DogFactsApi()) { data, error in
-                if let error = error {
+                if error != nil {
                     print("Error received requesting Dog Facts")
                 }
                 guard let dataSource = data, let dogFact = try? JSONDecoder().decode([DogFact].self, from: dataSource) else { return }

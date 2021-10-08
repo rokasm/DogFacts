@@ -11,7 +11,6 @@ import SwinjectAutoregistration
 
 class DogFactsViewModel: ObservableObject {
     @Published private(set) var dogFact: DogFact?
-
     var fetcher: DogFactFetcher
     
     init() {
